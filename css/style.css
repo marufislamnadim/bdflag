@@ -1,12 +1,13 @@
 /*-- defult settings for css--*/
 *{
-	padding: 0px;
+	padding-top: 10px;
 	margin: 0px;
 }
 body{
 	font-family: sans-serif;
 	font-size: 14px;
 	line-height: 24px;
+	background-color: rgba(15,155,0,0.1);
 }
 h1, h2, h3, h4, h5, h6{
 	font-family: monospace;
@@ -15,15 +16,19 @@ a, a:hover{
 	text-decoration: none;
 }
 /* ---  Specific Codes for BD FLag starts here  ---*/
+.container{
+	position: relative;
+}
 
 .green{
 	margin-left: 30px;
 	width: 500px;
 	height: 300px;
 	background: green;
-	position: relative;
+	position: absolute;
+	left: 30%;
 }
-.red{
+.green .red{
 	width: 150px;
 	height: 150px;
 	background: red;
@@ -32,11 +37,13 @@ a, a:hover{
 	top: 23%;
 	left: 33%;
 }
-.gray{
+.green .gray{
 	width: 10px;
 	height: 600px;
-	background: darkgray;
+	border-radius: 2px;
+	background: goldenrod;
 	position: absolute;
+	top: 0px;
 }
 
 /*-- right sticky semi pop up icon code starts here  --*/
@@ -52,4 +59,111 @@ a, a:hover{
 	right: -1px;
 	cursor: pointer;
 }
+
 /*-- formating scial media icon's code starts here  --*/
+
+.social-media{
+	width: 100vh;
+	height: 40px;
+
+	border-radius: 5px;
+	position: relative;
+	left: 45%;
+	top: 450px;
+}
+
+.social-icons{
+	text-align: center;
+	width: 100%;
+}
+.social-icons li{
+	list-style-type: none;
+	display: inline-block;
+}
+.social-icons .linkedin{
+	display: block;
+	
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	background-color: white;
+	color: seagreen; 
+	font-size: 40px;
+	border-radius: 100%;
+	margin: 0px 20px;
+	transition: 1s;
+}
+.social-icons .linkedin:hover{
+	background: black;
+	color: yellow;
+}
+
+.social-icons .twitter{
+	display: block;
+	
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	background-color: white;
+	color: lightskyblue; 
+	font-size: 40px;
+	border-radius: 100%;
+	margin: 0px 20px;
+	transition: 1s;
+}
+.social-icons .twitter:hover{
+	background: black;
+	color: lightskyblue;
+}
+.social-icons .facebook{
+	display: block;
+	
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	background-color: white;
+	color: royalblue; 
+	font-size: 40px;
+	border-radius: 100%;
+	margin: 0px 20px;
+	transition: 1s;
+}
+.social-icons .facebook:hover{
+	background: black;
+	color: royalblue;
+}
+.social-icons .youtube{
+	display: block;
+	
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	background-color: white;
+	color: red; 
+	font-size: 40px;
+	border-radius: 100%;
+	margin: 0px 20px;
+	transition: 1s;
+}
+.social-icons .youtube:hover{
+	background: black;
+	color: red;
+}
+
+.social-icons .behance{
+	display: block;
+	
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	background-color: white;
+	color: darkgray; 
+	font-size: 40px;
+	border-radius: 100%;
+	margin: 0px 20px;
+	transition: 1s;
+}
+.social-icons .behance:hover{
+	background: seagreen;
+	color: darkgray;
+}
